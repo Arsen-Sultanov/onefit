@@ -1,0 +1,87 @@
+
+
+.city_nav {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    width: 100%;
+}
+
+.city_nav p {
+    margin: 0;
+    color: #777;
+    font-family: Calibri;
+    padding: 16px 12px 6px;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0; 
+}
+
+.cn_case {
+    max-height: 130px;
+    overflow: auto;
+    display: flex;
+    flex-flow: column;
+}
+
+.cnc_item {
+    font-family: Calibri;
+    font-size: 18px;
+    padding: 10px 12px;
+    border-bottom: 1px solid #f0f0f0;
+    position: relative;
+}
+
+.cnc_item input {
+    position: absolute;
+    right: 0;
+    height: 30px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 30px;
+    -webkit-appearance: none;
+    outline: none;
+    background-size: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 12px;
+    top: 50%;
+    margin-top: -15px;
+    transition: 0.4s all;
+    opacity: 0;
+}
+
+.cnc_item input:checked {
+    background-image: url(check.png);
+    opacity: 1;
+}
+
+.cn_btn {
+    text-decoration: none;
+    outline:none;
+    border-style: none;
+    width: 100%;
+    background: #e5e5e5;
+    border-radius: 30px;
+    padding: 12px;
+    box-sizing: border-box;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: Calibri;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+
+
+.cn_btn_case {
+    padding: 12px;
+    box-sizing: border-box;
+}
+
+
+
+
+

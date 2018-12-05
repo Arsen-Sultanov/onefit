@@ -1,0 +1,40 @@
+.to-bottom{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+.to-bottom label{
+    color: #ffffff;
+    margin-bottom: 3%;
+    font-size: smaller;
+    font-family: Courier, monospace;
+    font-weight: initial;
+    font-size: 12px;
+}
+.to-bottom q{
+    quotes: "\00ab" "\00bb";
+}
+q::before {
+    content: open-quote;
+}
+q::after {
+    content: close-quote;
+}
+.login-label{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    width: 100%;
+    flex-flow: column;
+    text-align: center;
+}
+.login-label input{
+    margin-bottom: 1%;
+}
+.login-main{
+    flex-flow: wrap;
+}

@@ -1,0 +1,23 @@
+.cdo_limit {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.cdo_limit i {
+    width: 11px;
+    height: 11px;
+    background-image: url('./label.svg');
+    background-size: cover;
+    opacity: 0.5;
+    display: block;
+    margin-right: 8px;
+    transform: rotate(-90deg);
+}
+.cdo_limit p {
+    margin: 0;
+}
+.cdo_limit span {
+    font-weight: 500;
+}

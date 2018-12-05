@@ -1,0 +1,22 @@
+.cd_buns {
+    padding: 2px 14px 12px;
+    display: flex;
+}
+.bdb_item {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.bdb_wifi {
+    background-image: url('./wifi.svg');
+    background-size: cover;
+}
+.bdb_food {
+    background-image: url('./food.png');
+    background-size: 120%;
+    background-position: center;
+}
+.bdb_coffee {
+    background-image: url('./coffee.svg');
+    background-size: cover;
+}

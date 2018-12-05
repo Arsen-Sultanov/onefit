@@ -1,0 +1,13 @@
+.cii_like {
+    min-width: 32px;
+    height: 32px;
+    background: #ccc;
+    -webkit-mask: url(./star.svg) no-repeat 50% 50%;
+    mask: url(./star.svg) no-repeat 50% 50%; 
+        mask-size: auto auto;
+    -webkit-mask-size: 76%;
+    mask-size: 76%;
+}
+.cii_likeActive {
+    background: #f1ac4d;
+}

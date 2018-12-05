@@ -1,0 +1,20 @@
+.cdo_time {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+.cdo_time i {
+    width: 11px;
+    height: 11px;
+    display: block;
+    margin-right: 8px;
+    background-image: url('./time.svg');
+    background-size: cover;
+    opacity: 0.5;
+}
+.cdo_time p {
+    margin: 0;
+}

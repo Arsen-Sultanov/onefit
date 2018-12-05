@@ -1,0 +1,41 @@
+.club_nav {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color: #02aaeb;
+}
+.cn_item {
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    padding: 8px 0;
+    flex: 1;
+    font-weight: 100;
+}
+.cn_line {
+    position: absolute;
+    height: 3px;
+    left: 0;
+    background: #145f7e;
+    bottom: 0;
+    width: 33.3%;
+    transform: translateX(0%);
+    transition: 0.5s all;
+}
+.cn_itemActive {
+    font-weight: 700;
+}
+.club_content {
+    overflow: hidden;
+}
+.cc_case {
+    width: 300%;
+    display: flex;
+}
+.cc_item {
+    max-width: 100%;
+    transition: 0.5s all;
+    overflow: hidden;
+    width: 100%;
+}
+

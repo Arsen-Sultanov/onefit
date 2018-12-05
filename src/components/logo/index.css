@@ -1,0 +1,14 @@
+.logo_style{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 146px;
+    margin-top: 40%;
+}
+.logo_and_inscript{
+    background-image: url('./logo_and_inscript.png');
+} 
+.logo{
+    background-image: url('./logo.png');
+} 

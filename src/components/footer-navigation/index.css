@@ -1,0 +1,35 @@
+nav {
+    position: fixed;
+    background: #02aaeb;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.nav_item {
+    flex: 1;
+    margin: 0 4px;
+    text-decoration: none;
+}
+
+.ni_name {
+    color: #fff;
+    font-size: 9px;
+    margin: 0;
+    line-height: 14px;
+    text-align: center;
+}
+.ni_icon {
+    width: 32px;
+    height: 32px;
+    margin: 0 auto;
+    background-size: 72%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nav_clubs .ni_icon {background-image: url(./footer-icons/clubs.svg);}
+.nav_coach .ni_icon {background-image: url(./footer-icons/coach.png);background-position: center 58%;}
+.nav_like .ni_icon {background-image: url(./footer-icons/star.svg);background-position: center 58%;}
+.nav_acc .ni_icon {background-image: url(./footer-icons/acc.svg);background-position: center 58%;}
+.nav_graph .ni_icon {background-image: url(./footer-icons/graph.svg);background-position: center 58%;}

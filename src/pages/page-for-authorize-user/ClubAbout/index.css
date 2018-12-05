@@ -1,0 +1,41 @@
+.main_club {
+    padding-top: 0;
+    overflow: auto;
+}
+.cb_info {
+    padding: 12px;
+    display: flex;
+    flex-flow: column;
+}
+
+.cbi_name {
+    color: #fff;
+    z-index: 999;
+    font-size: 21px;
+    margin-top: 4px;
+}
+.club_data {
+    background-color: #02aaeb;
+}
+.cd_other {
+    padding: 10px 14px;
+}
+
+.cn_item_custom {
+    text-align: center;
+    color: #757575;
+    padding: 8px 0;
+    flex: 1;
+    font-weight: 200;
+}
+.cn_itemActive_custom {
+    font-weight: 700;
+    color: rgb(2, 170, 235);
+}
+.cn_nav_custom {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color : #fff;
+    color : #000;
+}

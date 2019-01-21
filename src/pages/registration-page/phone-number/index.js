@@ -2,35 +2,50 @@ import React from 'react';
 import history from '../../../history';
 import Button from '../../../components/button';
 import Input from '../../../components/input';
+import VkHelper from '../../../vk-helper';
 import Helper from '../../../helpers'; 
 import './index.css';
 
 class LoginPage extends React.Component {
+
     constructor(props){
         super(props);
-        let registrationBody = JSON.parse(localStorage.getItem('RegistrationBody'));
-        if(registrationBody.number){
-            let registrationBody = JSON.parse(localStorage.getItem('RegistrationBody'));
-            this.state = {
-                number : JSON.parse(localStorage.getItem('RegistrationBody')).phone
-            };
-            Helper.athorization({phone : registrationBody.phone});
-        }else{
-            this.state = {
-                number : ""
-            }
+        this.state = {
+            number : JSON.parse(localStorage.getItem('RegistrationBody')).phone
         }
         this.onSubmit = this.onSubmit.bind(this.onSubmit);
     }
-    onSubmit(event) {
+    componentWillMount(){
+        VkHelper.getPhoneNumber(phoneNumber =>{
+            this.setState({
+                number : phoneNumber
+            })
+        })
+    }
+
+    onSubmit(event){
+        event.preventDefault();
+        let number = event.target[0].value.replace(/[\s]/g , '');
         let registrationBody = JSON.parse(localStorage.getItem('RegistrationBody'));
-        registrationBody.phone = event.target[0].value.replace(/[\s]/g , '');
+        registrationBody.phone = number
         localStorage.setItem('RegistrationBody', JSON.stringify(registrationBody));
         Helper.athorization(
-            {phone : registrationBody.phone}
+            res => {
+                console.log(res);
+                if(res.errors && res.errors[0].status === 400){
+                    history.push('/registration');
+                    return;
+                }
+                console.log(res);
+                localStorage.setItem('isRegistred', 'true');
+                history.push('/code');
+                return;
+            },
+            err => {alert(err)},
+            {phone : number}
         );
-        event.preventDefault();
     }
+
     render () {
         return (
             <div className="blue-container">
@@ -56,4 +71,5 @@ class LoginPage extends React.Component {
         );
     }
 };
+
 export default LoginPage;

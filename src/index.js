@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Router} from 'react-router-dom';
 
-import VkHelper from './vk-helper';
 import hist from './history';
 import RouterList from './router';
 
@@ -14,7 +13,7 @@ import './index.css';
 
 
 
-// localStorage.clear();
+ localStorage.clear();
 
 ReactDOM.render(
     <Router history={hist}>
@@ -22,4 +21,5 @@ ReactDOM.render(
     </Router>,
     document.getElementById('root')
 );
+
 

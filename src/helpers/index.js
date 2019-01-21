@@ -1,8 +1,8 @@
-import History from '../../history';
+import History from '../history';
 const httpHeader =  {'Content-Type' : 'application/json; charset=utf-8'};
 //const baseUrl = 'https://onefit.ru/api/v1';
-const baseUrl = 'http://localhost:3001/api/v1';
-//const baseUrl = 'https://react-test.tw1.su/back/api/v1';
+//const baseUrl = 'http://localhost:3001/api/v1';
+const baseUrl = 'https://react-test.tw1.su/back/api/v1';
 
 const basePostConfig = {
     method: 'POST',
